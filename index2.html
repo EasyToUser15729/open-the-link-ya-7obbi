@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> for my only love </title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="script2.js" defer></script>
+  <script>
+    if (sessionStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login2.html";
+    }
+  </script>
+</head>
+<body>
+  <h1> All of this is for my Maryooma😉❤️ </h1>
+  <button id="playAudioBtn"> 😏اضغطي ع الزر الاول يجموسه </button>
+  
+  <audio id="myAudio">
+    <source src="audio/Mesh_Sahla.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="circle-gallery">
+    <!-- صورة في المنتصف -->
+    <img src="images/img21.jpg" alt="center" class="center-img" id="centerImage">
+    <p class="center-caption"></p>
+
+    <!-- الصور المحيطة -->
+    <div class="media active" data-src="images/img20.jpg" data-text=" 😘😘البت اللي بتزعلني بس انا مقدرش ازعل منها اصلا "></div>
+    <div class="media" data-src="images/img19.jpg" data-text=" 😘😔😔مفيش غير العيون دي اللي بتجبني لحد عندك وموقعاني فحبك كدا هو "></div>
+    <div class="media" data-src="images/img18.jpg" data-text=" ❤️🥰🥰محبتش ولا اقدر احب حد غيرك ولا فيوم يهون عليا زعلك يمريوم ويشهد ربي اني بخاف عليكي اكتر من اي حد والله بس بيخووني تعبيري لما يكون ف حاجه بجد مضيقاني بس بجد مش عايز يحصل م بنا مشاكل او نفكر نبعد فيوم لان دا مش هخليه يحصل ولا مني ولا منك مبحبش ولا هحب غيرك والله يمريوم مش مكتفي غير بيكي و عيني مش شايفه غير غيبوبتي بس "></div>
+    <div class="media" data-src="images/img17.jpg" data-text=" 😘😉اي الاويتفيت اللي واكل منك حته دا "></div>
+    <div class="media" data-src="images/img16.jpg" data-text=" 🫵🏻❤️انا بنهااااار و بمووت فييككيي يبنت شوشو "></div>
+    <div class="media" data-src="images/img15.jpg" data-text=" 😂😔😔اول يوم عيد مع بعد مقدرش انساه ولا انسى نكدوه "></div>
+    <div class="media" data-src="images/img14.jpg" data-text=" 🫵🏻🫣اسبيدر قلبي و عقلي يجدعاان "></div>
+    <div class="media" data-src="images/img13.jpg" data-text=" 😘😘😘😘😘😘لحظه ادراك اني داخل تاني عيد ب اللي بيهم كلهم  "></div>
+    <div class="media" data-src="images/img12.jpg" data-text=" ❤️😉😉😉اي البت المزه اللي كله كان بصصله اليوم دا "></div>
+  </div>
+
+  <div class="viewer">
+    <img id="viewer-img" src="" alt="" />
+    <p id="viewer-text"></p>
+  </div>
+</body>
+</html>
+

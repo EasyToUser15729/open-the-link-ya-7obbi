@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title> open the link, ya 7obbi😉❤️ </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background: url('images/img10.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Tahoma', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    .login-container {
+      margin: 80px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px pink;
+      max-width: 90%;
+      width: 300px;
+      backdrop-filter: blur(5px);
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: hotpink;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: deeppink;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .hint {
+      font-size: 14px;
+      color: #ffc0cb;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .login-container {
+        width: 90%;
+        padding: 20px 15px;
+        margin: 40px auto;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      input[type="password"],
+      button {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>I don't know the password😜</h2>
+    <input type="password" id="passwordInput" placeholder="كلمة السر" />
+    <br />
+    <button onclick="checkPassword()">دخول</button>
+    <div class="hint"></div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "157297"; // كلمة السر
+      const userPassword = document.getElementById("passwordInput").value;
+
+      if (userPassword === correctPassword) {
+        sessionStorage.setItem("loggedIn", "true");
+        window.location.href = "index2.html";
+      } else {
+        alert(" متحااوليش مش قااايل حااجه ");
+      }
+    }
+  </script>
+</body>
+</html>
