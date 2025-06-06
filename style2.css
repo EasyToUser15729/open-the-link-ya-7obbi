@@ -64,6 +64,11 @@ button:hover {
   object-fit: cover;
   border: 3px solid white;
   z-index: 2;
+
+  /* تحسين */
+  max-width: 25vw;
+  max-height: 25vw;
+
 }
 
 .viewer {
@@ -81,7 +86,11 @@ button:hover {
   font-size: 18px;
   margin-top: 10px;
   color: #c95d5d;
+  line-height: 1.6;
+  white-space: pre-wrap; /* المهم ده */
+  word-break: break-word;
 }
+
 
 .center-caption {
   color: white;
